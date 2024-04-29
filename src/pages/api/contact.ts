@@ -52,7 +52,7 @@ const generateEmailContent = (data) => {
 
 
     return {
-       text: textContent,
+      text: stringData,
         html: `<!DOCTYPE html>
         <html>
           <head>
