@@ -5,10 +5,26 @@ import { useState } from "react";
 import BasicLayout from "./BasicLayout";
 import VariableLayout from "./VariableLayout";
 import PopupCheck from "./PopupCheck/PopupCheck";
+import { sendContactForm } from "@/lib/contactApi";
 
 function Price() {
   const [toggle, setToggle] = useState<number>(1);
   const [priceCheck, setPriceCheck] = useState<boolean>(false);
+  const [formData, setFormData] = useState({}); // Dodaj stan do przechowywania danych formularza
+ 
+    const handleSubmit = async () => {
+      const dataToSubmit = {
+        email: formData.email, // Upewnij się, że email jest prawidłowo przechowywany w formData
+        selectedPeriod: toggle, // Używaj stanu 'toggle' bezpośrednio
+        quantities: formData.quantities, // Upewnij się, że quantities są odpowiednio aktualizowane
+      };
+
+    await sendContactForm(dataToSubmit);
+  };
+
+  const updateFormData = (data) => {
+    setFormData(data);
+  };
 
   const handleToggle = (index: number) => {
     setToggle(index);
@@ -74,7 +90,13 @@ function Price() {
               >
                 Zobacz cenę
               </Button>
-              {priceCheck && <PopupCheck onClose={handleCloseCheck} />}
+              {priceCheck && (
+                <PopupCheck
+                  onClose={handleCloseCheck}
+                  handleSubmit={handleSubmit}
+                  formData={formData}
+                />
+              )}
               <Button variant="secondary">
                 Skontaktuj się telefonicznie &rarr;
               </Button>
@@ -89,7 +111,7 @@ function Price() {
             </div>
           </div>
           <div className="right order-1 md:order-1 lg:order-2 flex w-full bg-secondary rounded-xl p-6">
-            <VariableLayout />
+            <VariableLayout updateFormData={updateFormData} />
           </div>
         </div>
       </div>

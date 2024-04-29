@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { variableData } from "./Data";
 import { Info } from "lucide-react";
 import PopupInfo from "./PopupInfo";
@@ -10,8 +10,23 @@ interface variableLayoutProps {
   desc: string;
 }
 
-function VariableLayout() {
+function VariableLayout({ updateFormData }) {
   const [Hover, setHover] = useState<number | null>(null);
+  const [values, setValues] = useState({});
+
+  const handleChange = (id, value) => {
+    const productInfo = variableData.find((item) => item.id === id);
+    if (!productInfo) return; // dodatkowe zabezpieczenie, gdyby data była niekompletna
+
+    setValues((prev) => ({
+      ...prev,
+      [productInfo.variable]: value, // zmiana z id na nazwę produktu
+    }));
+  };
+
+  useEffect(() => {
+    updateFormData({ products: values }); // przekazujemy obiekt produktów
+  }, [values, updateFormData]);
 
   return (
     <div className="flex flex-col gap-4">
@@ -23,6 +38,8 @@ function VariableLayout() {
               className="w-16 h-7 px-2 rounded-sm font-normal"
               type="number"
               min={0}
+              value={values[data.id] || 0}
+              onChange={(e) => handleChange(data.id, parseInt(e.target.value))}
             />
             <div className="icon relative ">
               <Info

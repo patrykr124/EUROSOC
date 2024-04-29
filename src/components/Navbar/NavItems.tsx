@@ -33,7 +33,7 @@ function NavItems() {
         className="font-medium uppercase hover:-translate-y-1 py-4 transition-all"
         href="/contact"
       >
-        FQA
+        FAQ
       </Link>
       <Link
         className="font-medium uppercase hover:-translate-y-1 py-4 transition-all"
