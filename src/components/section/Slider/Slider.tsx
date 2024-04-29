@@ -34,27 +34,29 @@ function Slider() {
                         Cybers One
                       </div>
                       <div className="title">
-                        <span
+                        <h1
                           className="title-inner splitting-text-anim-2"
                           data-splitting=""
                         >
                           Jeden <br />
                           abonament
-                        </span>
+                        </h1>
                       </div>
                       <div className="subtitle scrolla-element-anim-1">
-                        na rozwiązanie wszytskich Twoich problemów z
-                        cyberbezpieczeństwem, bezpieczeństwem informacji,
-                        ochroną danych, monitoringiem, zaawansowaną analizą, i
-                        odmiejscowieniem krytycznych kopii zapasowych, odpornych
-                        nawet na raMsonWare,
+                        <p className=" max-w-prose">
+                          na rozwiązanie wszytskich Twoich problemów z
+                          cyberbezpieczeństwem, bezpieczeństwem informacji,
+                          ochroną danych, monitoringiem, zaawansowaną analizą, i
+                          odmiejscowieniem krytycznych kopii zapasowych,
+                          odpornych nawet na raMsonWare,
+                        </p>
                       </div>
                     </div>
                     <div className="more-bts">
                       <Link legacyBehavior href="/work-single">
                         <a
                           data-splitting=""
-                          className="btn more-btn scrolla-element-anim-1"
+                          className="callbtn btn more-btn scrolla-element-anim-1"
                         >
                           Oblicz cenę
                         </a>
@@ -81,14 +83,14 @@ function Slider() {
                     {/* title */}
                     <div className="titles">
                       <div className="label scrolla-element-anim-1">
-                      Cybers One
+                        Cybers One
                       </div>
                       <div className="title">
                         <span
                           className="title-inner splitting-text-anim-2"
                           data-splitting=""
                         >
-                          Wszystkie certyfikaty 
+                          Wszystkie certyfikaty
                         </span>
                       </div>
                       <div className="subtitle scrolla-element-anim-1">
@@ -103,9 +105,9 @@ function Slider() {
                       <Link legacyBehavior href="/work-single">
                         <a
                           data-splitting=""
-                          className="btn more-btn scrolla-element-anim-1"
+                          className="callbtn text-white btn more-btn scrolla-element-anim-1"
                         >
-                          see details
+                          Oblicz cenę
                         </a>
                       </Link>
                     </div>
@@ -114,98 +116,7 @@ function Slider() {
               </div>
             </MaxWidthWrapper>
           </SwiperSlide>
-          <SwiperSlide className="swiper-slide flex" data-color="white">
-            {/* image */}
-            <div
-              className="slide"
-              style={{
-                backgroundImage:
-                  "url(assets/images/started-n2_4-1920x1080.jpg)",
-              }}
-            />
-            {/* slide titles */}
-            <MaxWidthWrapper>
-              <div className="slide-titles">
-                <div className="row">
-                  <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    {/* title */}
-                    <div className="titles">
-                      <div className="label scrolla-element-anim-1">art</div>
-                      <div className="title">
-                        <span
-                          className="title-inner splitting-text-anim-2"
-                          data-splitting=""
-                        >
-                          The Dance
-                        </span>
-                      </div>
-                      <div className="subtitle scrolla-element-anim-1">
-                        Creativity is to discover a question that has never been
-                        asked. If one brings up an idiosyncratic question, the
-                        answer he gives will necessarily be unique as well.
-                      </div>
-                    </div>
-                    <div className="more-bts">
-                      <Link legacyBehavior href="/work-single">
-                        <a
-                          data-splitting=""
-                          className="btn more-btn scrolla-element-anim-1"
-                        >
-                          see details
-                        </a>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </MaxWidthWrapper>
-          </SwiperSlide>
-          <SwiperSlide className="swiper-slide flex" data-color="white">
-            {/* image */}
-            <div
-              className="slide"
-              style={{
-                backgroundImage:
-                  "url(assets/images/started-n14_1-1000x1080.jpg)",
-              }}
-            />
-            {/* slide titles */}
-            <MaxWidthWrapper>
-              <div className="slide-titles">
-                <div className="row">
-                  <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    {/* title */}
-                    <div className="titles">
-                      <div className="label scrolla-element-anim-1">art</div>
-                      <div className="title">
-                        <span
-                          className="title-inner splitting-text-anim-2"
-                          data-splitting=""
-                        >
-                          Negative Space
-                        </span>
-                      </div>
-                      <div className="subtitle scrolla-element-anim-1">
-                        Creativity is to discover a question that has never been
-                        asked. If one brings up an idiosyncratic question, the
-                        answer he gives will necessarily be unique as well.
-                      </div>
-                    </div>
-                    <div className="more-bts">
-                      <Link legacyBehavior href="/work-single">
-                        <a
-                          data-splitting=""
-                          className="btn more-btn scrolla-element-anim-1"
-                        >
-                          see details
-                        </a>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </MaxWidthWrapper>
-          </SwiperSlide>
+
           {/* pagination */}
           <div
             className="swiper-pagination scrolla-element-anim-1 scroll-animate swiper-pagination-bullets swiper-pagination-horizontal animate__active animate__animated"

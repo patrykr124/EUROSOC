@@ -41,7 +41,9 @@ function VariableLayout({
                 />
                 {hover === product.id && <PopupInfo desc={product.desc} />}
               </div>
-              <div className="product">{product.variable}</div>
+              <div className="product">
+                <p>{product.variable}</p>
+              </div>
             </div>
           </label>
         ))}

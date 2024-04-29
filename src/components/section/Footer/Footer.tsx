@@ -1,7 +1,8 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { Facebook, Instagram, Mail } from "lucide-react";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import XIcon from "@mui/icons-material/X";
 
 function Footer() {
   return (
@@ -18,11 +19,13 @@ function Footer() {
                   alt="logo"
                 />
               </Link>
-              <p>ul. Wrocławska 25, 58-100 Świdnica</p>
+              <p>
+                UL. GRZYBOWSKA 2/29<br></br> 00-131 WARSZAWA
+              </p>
               <p>tel. 74 852 00 00</p>
               <p>
                 <Link href="mailto:patrykr124@gmail.com">
-                  patrykr124@gmail.com
+                  sales@cybers.zone
                 </Link>
               </p>
             </div>
@@ -37,9 +40,14 @@ function Footer() {
                 className="cursor-pointer hover:scale-125 transition ease-in-out"
                 size={30}
               />
-              <Mail
+
+              <Linkedin
                 className="cursor-pointer hover:scale-125 transition ease-in-out"
                 size={30}
+              />
+              <XIcon
+                className="cursor-pointer hover:scale-125 transition ease-in-out"
+                style={{ fontSize: 30 }}
               />
             </div>
           </div>

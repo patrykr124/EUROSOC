@@ -1,0 +1,18 @@
+.icon {
+  transition: all 0.2s ease-in-out;
+}
+.icon-box:hover .icon {
+  color: rgb(255, 255, 255);
+  transform: scale(1.2);
+}
+.box-functionality {
+  border-color: rgb(243, 243, 243);
+}
+
+.box-functionality:hover {
+  background: linear-gradient(
+    200deg,
+    rgba(255, 255, 255, 0.4038749288778011) 51%,
+    rgba(212, 171, 51, 0.23300658153886555) 100%
+  );
+}

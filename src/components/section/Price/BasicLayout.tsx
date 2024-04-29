@@ -13,7 +13,7 @@ function BasicLayout({ handleBasicQuantityChange, basicQuantities }) {
             key={data.id}
             className="box flex flex-row gap-4 justify-between items-center"
           >
-            <p>{data.title}</p>
+            <p>{data.title}:</p>
             <input
               className="w-14 h-7 px-2 rounded-sm"
               type="number"

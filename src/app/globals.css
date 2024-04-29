@@ -2,10 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-h3 {
-  font-size: 20px;
-  font-weight: 800;
+h1 {
+  font-weight: 700;
 }
+h2 {
+  font-size: 45px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* body{
+  color: hsl(0, 0%, 94%);
+} */
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -16,7 +28,7 @@ h3 {
     --popover-foreground: 20 14.3% 4.1%;
     --primary: 47.9 95.8% 53.1%;
     --primary-foreground: 26 83.3% 14.1%;
-    --secondary: 60 4.8% 95.9%;
+    --secondary: 10, 0%, 95%;
     --secondary-foreground: 24 9.8% 10%;
     --muted: 60 4.8% 95.9%;
     --muted-foreground: 25 5.3% 44.7%;

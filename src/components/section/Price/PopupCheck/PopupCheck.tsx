@@ -8,11 +8,7 @@ import VariableLayout from "../VariableLayout";
 import BasicLayout from "../BasicLayout";
 import ButtonLayout from "../ButtonLayout";
 
-interface PopupCheckProps {
-  onClose: () => void;
-}
-
-const PopupCheck: React.FC<PopupCheckProps> = ({ onClose }) => {
+const PopupCheck: React.FC<PopupCheckProps> = () => {
   const [email, setEmail] = useState<string>("");
   const [quantities, setQuantities] = useState(
     variableData.reduce((acc, product) => {
@@ -63,10 +59,8 @@ const PopupCheck: React.FC<PopupCheckProps> = ({ onClose }) => {
 
   return (
     <MaxWidthWrapper className="price">
-      <div className="top mx-auto py-16 text-center flex justify-center">
-        <h2 className="text-5xl font-bold tracking-tighter">
-          Okres trwania umowy
-        </h2>
+      <div className="top mx-auto py-20 text-center flex justify-center">
+        <h2>Okres trwania umowy</h2>
       </div>
       <div className="bottom flex flex-col gap-4">
         <div className="top">
