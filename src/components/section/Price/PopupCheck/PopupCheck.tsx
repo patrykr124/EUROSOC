@@ -1,11 +1,12 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { sendContactForm } from "@/lib/contactApi";
-import React, { useState } from "react";
+import React, { ReactHTML, useState } from "react";
 import { basicData, variableData } from "../Data";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { Info } from "lucide-react";
-import PopupInfo from "../PopupInfo";
+import VariableLayout from "../VariableLayout";
+import BasicLayout from "../BasicLayout";
+import ButtonLayout from "../ButtonLayout";
 
 interface PopupCheckProps {
   onClose: () => void;
@@ -36,14 +37,14 @@ const PopupCheck: React.FC<PopupCheckProps> = ({ onClose }) => {
     setEmail(event.target.value);
   };
 
-  const handleQuantityChange = (productName, value) => {
+  const handleQuantityChange = (productName: string, value: number) => {
     setQuantities((prevQuantities) => ({
       ...prevQuantities,
       [productName]: value,
     }));
   };
 
-  const handleBasicQuantityChange = (title, value) => {
+  const handleBasicQuantityChange = (title: string, value: number) => {
     setBasicQuantities((prevBasicQuantities) => ({
       ...prevBasicQuantities,
       [title]: value,
@@ -68,67 +69,16 @@ const PopupCheck: React.FC<PopupCheckProps> = ({ onClose }) => {
         </h2>
       </div>
       <div className="bottom flex flex-col gap-4">
-        <div className="top  bg-secondary justify-center flex gap-2 flex-col lg:flex-row md:flex-row md:gap-6 lg:gap-6 rounded-xl p-2">
-          <Button
-            className={
-              toggle === 1
-                ? "bg-black text-white hover:bg-black hover:text-white"
-                : ""
-            }
-            onClick={() => handleToggle(1)}
-            size="lg"
-            variant="default"
-          >
-            12 miesięcy
-          </Button>
-          <Button
-            className={
-              toggle === 2
-                ? "bg-black text-white hover:bg-black hover:text-white"
-                : ""
-            }
-            onClick={() => handleToggle(2)}
-            size="lg"
-            variant="default"
-          >
-            24 miesięcy
-          </Button>
-          <Button
-            className={
-              toggle === 3
-                ? "bg-black text-white hover:bg-black hover:text-white"
-                : ""
-            }
-            onClick={() => handleToggle(3)}
-            size="lg"
-            variant="default"
-          >
-            36 miesięcy
-          </Button>
+        <div className="top">
+          <ButtonLayout toggle={toggle} handleToggle={handleToggle} />
         </div>
         <div className="box flex flex-col gap-6 lg:flex-row">
           <div className="left order-2 md:order-2 lg:order-1 bg-secondary rounded-xl p-6 flex flex-col justify-between ">
             <div className="left-box-content flex flex-col gap-2 ">
-              {basicData.map((data) => (
-                <label
-                  key={data.id}
-                  className="box flex flex-row gap-4 justify-between items-center"
-                >
-                  <p>{data.title}</p>
-                  <input
-                    className="w-14 h-7 px-2 rounded-sm"
-                    type="number"
-                    min={0}
-                    value={basicQuantities[data.title]}
-                    onChange={(e) =>
-                      handleBasicQuantityChange(
-                        data.title,
-                        parseInt(e.target.value)
-                      )
-                    }
-                  />
-                </label>
-              ))}
+              <BasicLayout
+                handleBasicQuantityChange={handleBasicQuantityChange}
+                basicQuantities={basicQuantities}
+              />
             </div>
             <div className="bottom-box mt-4 md:mt-0 flex flex-col gap-2 lg:gap-4 md:gap-4">
               <label className="flex flex-col gap-4">
@@ -163,36 +113,12 @@ const PopupCheck: React.FC<PopupCheckProps> = ({ onClose }) => {
             </div>
           </div>
           <div className="right order-1 md:order-1 lg:order-2 flex flex-col w-full bg-secondary rounded-xl p-6">
-            {variableData.map((product) => (
-              <label key={product.id} className="flex gap-4 mt-2">
-                <div className="box flex gap-4 justify-center items-center">
-                  <input
-                    className="w-16 h-7 px-2 rounded-sm font-normal"
-                    type="number"
-                    placeholder={`Quantity of ${product.variable}`}
-                    min="0"
-                    value={quantities[product.variable]}
-                    onChange={(e) =>
-                      handleQuantityChange(
-                        product.variable,
-                        parseInt(e.target.value)
-                      )
-                    }
-                  />
-                  <div className="icon relative">
-                    <Info
-                      onMouseEnter={() => setHover(product.id)}
-                      onMouseLeave={() => setHover(null)}
-                      size={20}
-                      strokeWidth={1.5}
-                      className="cursor-pointer"
-                    />
-                    {hover === product.id && <PopupInfo desc={product.desc} />}
-                  </div>
-                  <div className="product">{product.variable}</div>
-                </div>
-              </label>
-            ))}
+            <VariableLayout
+              quantities={quantities}
+              handleQuantityChange={handleQuantityChange}
+              setHover={setHover}
+              hover={hover}
+            />
           </div>
         </div>
       </div>
