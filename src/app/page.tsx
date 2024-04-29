@@ -1,6 +1,6 @@
 import NavBar from "@/components/Navbar/NavBar";
 import Footer from "@/components/section/Footer/Footer";
-import Price from "@/components/section/Price/Price";
+import PopupCheck from "@/components/section/Price/PopupCheck/PopupCheck";
 import Slider from "@/components/section/Slider/Slider";
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
     <main>
       <NavBar />
       <Slider />
-      <Price />
+      <PopupCheck />
       <Footer />
     </main>
   );

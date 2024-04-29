@@ -31,21 +31,23 @@ function Slider() {
                     {/* title */}
                     <div className="titles dark">
                       <div className="label scrolla-element-anim-1">
-                        brandinga
+                        Cybers One
                       </div>
                       <div className="title">
                         <span
                           className="title-inner splitting-text-anim-2"
                           data-splitting=""
                         >
-                          Melanin <br />
-                          Goddess
+                          Jeden <br />
+                          abonament
                         </span>
                       </div>
                       <div className="subtitle scrolla-element-anim-1">
-                        Creativity is to discover a question that has never been
-                        asked. If one brings up an idiosyncratic question, the
-                        answer he gives will necessarily be unique as well.
+                        na rozwiązanie wszytskich Twoich problemów z
+                        cyberbezpieczeństwem, bezpieczeństwem informacji,
+                        ochroną danych, monitoringiem, zaawansowaną analizą, i
+                        odmiejscowieniem krytycznych kopii zapasowych, odpornych
+                        nawet na raMsonWare,
                       </div>
                     </div>
                     <div className="more-bts">
@@ -54,7 +56,7 @@ function Slider() {
                           data-splitting=""
                           className="btn more-btn scrolla-element-anim-1"
                         >
-                          see details
+                          Oblicz cenę
                         </a>
                       </Link>
                     </div>
@@ -79,20 +81,22 @@ function Slider() {
                     {/* title */}
                     <div className="titles">
                       <div className="label scrolla-element-anim-1">
-                        branding
+                      Cybers One
                       </div>
                       <div className="title">
                         <span
                           className="title-inner splitting-text-anim-2"
                           data-splitting=""
                         >
-                          Blue denim
+                          Wszystkie certyfikaty 
                         </span>
                       </div>
                       <div className="subtitle scrolla-element-anim-1">
-                        Creativity is to discover a question that has never been
-                        asked. If one brings up an idiosyncratic question, the
-                        answer he gives will necessarily be unique as well.
+                        istotne w prowadzeniu Biznesu w kontekście
+                        cyberbezpieczeństwa, ochrony informacji i innych
+                        obszarów związanych z bezpieczeństwem w jednym miejscu.
+                        Gotowe, wraz z zepsołem ekspertów, do natychmiastowego
+                        włączenia Twojego Zespołu
                       </div>
                     </div>
                     <div className="more-bts">
@@ -167,39 +171,39 @@ function Slider() {
             />
             {/* slide titles */}
             <MaxWidthWrapper>
-            <div className="slide-titles">
-              <div className="row">
-                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                  {/* title */}
-                  <div className="titles">
-                    <div className="label scrolla-element-anim-1">art</div>
-                    <div className="title">
-                      <span
-                        className="title-inner splitting-text-anim-2"
-                        data-splitting=""
-                      >
-                        Negative Space
-                      </span>
+              <div className="slide-titles">
+                <div className="row">
+                  <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    {/* title */}
+                    <div className="titles">
+                      <div className="label scrolla-element-anim-1">art</div>
+                      <div className="title">
+                        <span
+                          className="title-inner splitting-text-anim-2"
+                          data-splitting=""
+                        >
+                          Negative Space
+                        </span>
+                      </div>
+                      <div className="subtitle scrolla-element-anim-1">
+                        Creativity is to discover a question that has never been
+                        asked. If one brings up an idiosyncratic question, the
+                        answer he gives will necessarily be unique as well.
+                      </div>
                     </div>
-                    <div className="subtitle scrolla-element-anim-1">
-                      Creativity is to discover a question that has never been
-                      asked. If one brings up an idiosyncratic question, the
-                      answer he gives will necessarily be unique as well.
+                    <div className="more-bts">
+                      <Link legacyBehavior href="/work-single">
+                        <a
+                          data-splitting=""
+                          className="btn more-btn scrolla-element-anim-1"
+                        >
+                          see details
+                        </a>
+                      </Link>
                     </div>
-                  </div>
-                  <div className="more-bts">
-                    <Link legacyBehavior href="/work-single">
-                      <a
-                        data-splitting=""
-                        className="btn more-btn scrolla-element-anim-1"
-                      >
-                        see details
-                      </a>
-                    </Link>
                   </div>
                 </div>
               </div>
-            </div>
             </MaxWidthWrapper>
           </SwiperSlide>
           {/* pagination */}

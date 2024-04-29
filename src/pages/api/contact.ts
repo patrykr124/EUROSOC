@@ -1,18 +1,58 @@
 import { mailOptions, transporter } from "@/config/nodemailer";
 
-const CONTACT_MESSAGE_FIELDS = {email: 'Email'}
-
 const generateEmailContent = (data) => {
-    const stringData = Object.entries(data).reduce((str,[key, val]) => (str += `${CONTACT_MESSAGE_FIELDS[key]}: \n${val} \n` ) 
-, '');
+  const { email, quantities, basicQuantities, duration } = data;
 
-const htmlData = Object.entries(data).reduce((str, [key, val]) => {
-    return (str += `<h3 align="left">${CONTACT_MESSAGE_FIELDS[key]}</h3><p align="left">${val}</p>`);
-  }, "");
+  // Interpretacja okresu umowy
+  let durationText = '';
+  switch (duration) {
+    case 1:
+      durationText = '12 miesięcy';
+      break;
+    case 2:
+      durationText = '24 miesięce';
+      break;
+    case 3:
+      durationText = '36 miesięcy';
+      break;
+    default:
+      durationText = 'Nieokreślony okres';
+  }
+
+  // Tworzenie tekstowej części danych podstawowych
+  let basicDataText = "Podstawowe dane:\n";
+  for (const [title, value] of Object.entries(basicQuantities)) {
+    basicDataText += `${title}: ${value}\n`;
+  }
+
+  // Tworzenie HTML dla danych podstawowych
+  let basicDataHtml = "<h3 align='left'>Podstawowe dane:</h3>";
+  for (const [title, value] of Object.entries(basicQuantities)) {
+    basicDataHtml += `<p align='left'><b>${title}</b>: ${value}</p>`;
+  }
+
+  // Tworzenie tekstowej części danych produktów
+  let productsText = "Produkty:\n";
+  for (const [productName, quantity] of Object.entries(quantities)) {
+    productsText += `${productName}: ${quantity}\n`;
+  }
+
+  // Tworzenie HTML dla danych produktów
+  let productsHtml = "<h3 align='left'>Produkty:</h3>";
+  for (const [productName, quantity] of Object.entries(quantities)) {
+    productsHtml += `<p align='left'><b>${productName}</b>: Quantity: ${quantity}</p>`;
+  }
+
+  // Całkowita treść e-maila w formacie tekstowym i HTML
+  let stringData = `Email: ${email}\nOkres umowy: ${durationText}\n\n${basicDataText}\n${productsText}`;
+  let htmlData = `<h3 align='left'>Email</h3><p align='left'>${email}</p>
+                  <h3 align='left'>Okres umowy</h3><p align='left'>${durationText}</p>
+                  ${basicDataHtml}
+                  ${productsHtml}`;
 
 
     return {
-        text: stringData,
+      text: stringData,
         html: `<!DOCTYPE html>
         <html>
           <head>
@@ -134,6 +174,7 @@ const htmlData = Object.entries(data).reduce((str, [key, val]) => {
                                   >
                                     <h2>Nowa wiadomość wyceny</h2>
                                     <div class="form-container">${htmlData}</div>
+                                  
                                   </td>
                                 </tr>
                               </table>
@@ -154,24 +195,23 @@ const htmlData = Object.entries(data).reduce((str, [key, val]) => {
 
 
 const handler = async (req, res) => {
-   if(req.method === 'POST') {
-    const data = req.body;
+  if (req.method === 'POST') {
+    const data = req.body; // Dane zawierające `email` i `quantities`
 
-    try{
-        await transporter.sendMail({
-            ...mailOptions,
-            ...generateEmailContent(data),
-            subject: "Nowy email od klienta",
-           
-        })
-        return res.status(200).json({ message: "Email sent"})
+    try {
+      await transporter.sendMail({
+        ...mailOptions,
+        ...generateEmailContent(data),
+        subject: "Nowy email od klienta",
+      });
+      return res.status(200).json({ message: "Email sent" });
     } catch (error) {
-        console.log(error)
-        return res.status(500).json({ message: "Internal server error"})
+      console.error(error);
+      return res.status(500).json({ message: "Internal server error" });
     }
-  
-   }
-    return res.status(400).json({ message: "Bad request"})
-}
+  } else {
+    return res.status(400).json({ message: "Bad request" });
+  }
+};
 
 export default handler
