@@ -1,17 +1,18 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { sendContactForm } from "@/lib/contactApi";
-import { X } from "lucide-react";
 import React, { useState } from "react";
 import { basicData, variableData } from "../Data";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import { Info } from "lucide-react";
+import PopupInfo from "../PopupInfo";
 
 interface PopupCheckProps {
   onClose: () => void;
 }
 
 const PopupCheck: React.FC<PopupCheckProps> = ({ onClose }) => {
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState<string>("");
   const [quantities, setQuantities] = useState(
     variableData.reduce((acc, product) => {
       acc[product.variable] = 0;
@@ -25,14 +26,10 @@ const PopupCheck: React.FC<PopupCheckProps> = ({ onClose }) => {
     }, {})
   );
   const [toggle, setToggle] = useState<number>(1);
-  const [priceCheck, setPriceCheck] = useState<boolean>(false);
+  const [hover, setHover] = useState<number | null>(null);
 
   const handleToggle = (index: number) => {
     setToggle(index);
-  };
-
-  const handleCloseCheck = () => {
-    setPriceCheck(false);
   };
 
   const handleEmailChange = (event) => {
@@ -65,8 +62,8 @@ const PopupCheck: React.FC<PopupCheckProps> = ({ onClose }) => {
 
   return (
     <MaxWidthWrapper className="price">
-      <div className="top mx-auto py-20 text-center flex justify-center">
-        <h2 className="text-4xl uppercase tracking-tighter">
+      <div className="top mx-auto py-16 text-center flex justify-center">
+        <h2 className="text-5xl font-bold tracking-tighter">
           Okres trwania umowy
         </h2>
       </div>
@@ -182,7 +179,17 @@ const PopupCheck: React.FC<PopupCheckProps> = ({ onClose }) => {
                       )
                     }
                   />
-                  {product.variable}
+                  <div className="icon relative">
+                    <Info
+                      onMouseEnter={() => setHover(product.id)}
+                      onMouseLeave={() => setHover(null)}
+                      size={20}
+                      strokeWidth={1.5}
+                      className="cursor-pointer"
+                    />
+                    {hover === product.id && <PopupInfo desc={product.desc} />}
+                  </div>
+                  <div className="product">{product.variable}</div>
                 </div>
               </label>
             ))}
