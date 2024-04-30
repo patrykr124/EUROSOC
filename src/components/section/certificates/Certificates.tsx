@@ -35,8 +35,8 @@ function Certificates() {
                 <Image
                   src="/assets/images/1.png"
                   alt="collab1"
-                  width={400}
-                  height={400}
+                  width={200}
+                  height={200}
                 />
               </div>
             </SwiperSlide>
@@ -45,8 +45,8 @@ function Certificates() {
                 <Image
                   src="/assets/images/2.png"
                   alt="collab1"
-                  width={400}
-                  height={400}
+                  width={200}
+                  height={200}
                 />
               </div>
             </SwiperSlide>
@@ -55,8 +55,8 @@ function Certificates() {
                 <Image
                   src="/assets/images/3.png"
                   alt="collab1"
-                  width={400}
-                  height={400}
+                  width={200}
+                  height={200}
                 />
               </div>
             </SwiperSlide>
@@ -65,8 +65,8 @@ function Certificates() {
                 <Image
                   src="/assets/images/4.png"
                   alt="collab1"
-                  width={400}
-                  height={400}
+                  width={200}
+                  height={200}
                 />
               </div>
             </SwiperSlide>
@@ -75,8 +75,8 @@ function Certificates() {
                 <Image
                   src="/assets/images/5.png"
                   alt="collab1"
-                  width={400}
-                  height={400}
+                  width={200}
+                  height={200}
                 />
               </div>
             </SwiperSlide>
@@ -85,8 +85,8 @@ function Certificates() {
                 <Image
                   src="/assets/images/6.png"
                   alt="collab1"
-                  width={400}
-                  height={400}
+                  width={200}
+                  height={200}
                 />
               </div>
             </SwiperSlide>
@@ -95,8 +95,8 @@ function Certificates() {
                 <Image
                   src="/assets/images/7.png"
                   alt="collab1"
-                  width={400}
-                  height={400}
+                  width={200}
+                  height={200}
                 />
               </div>
             </SwiperSlide>
@@ -105,8 +105,8 @@ function Certificates() {
                 <Image
                   src="/assets/images/8.png"
                   alt="collab1"
-                  width={400}
-                  height={400}
+                  width={200}
+                  height={200}
                 />
               </div>
             </SwiperSlide>
@@ -115,8 +115,8 @@ function Certificates() {
                 <Image
                   src="/assets/images/9.png"
                   alt="collab1"
-                  width={400}
-                  height={400}
+                  width={200}
+                  height={200}
                 />
               </div>
             </SwiperSlide>
@@ -125,8 +125,8 @@ function Certificates() {
                 <Image
                   src="/assets/images/10.png"
                   alt="collab1"
-                  width={400}
-                  height={400}
+                  width={200}
+                  height={200}
                 />
               </div>
             </SwiperSlide>
@@ -135,8 +135,8 @@ function Certificates() {
                 <Image
                   src="/assets/images/11.png"
                   alt="collab1"
-                  width={400}
-                  height={400}
+                  width={200}
+                  height={200}
                 />
               </div>
             </SwiperSlide>

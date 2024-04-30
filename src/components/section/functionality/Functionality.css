@@ -1,9 +1,10 @@
 .icon {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
-.icon-box:hover .icon {
+.box-functionality:hover .icon {
   color: rgb(255, 255, 255);
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
+  transform: rotateY(360deg);
 }
 .box-functionality {
   border-color: rgb(243, 243, 243);
@@ -16,3 +17,4 @@
     rgba(212, 171, 51, 0.23300658153886555) 100%
   );
 }
+

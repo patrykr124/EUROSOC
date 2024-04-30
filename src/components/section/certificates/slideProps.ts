@@ -2,7 +2,7 @@
 
 const SlideProps = {
 
-	spaceBetween: 20,
+	spaceBetween: 0,
 	slidesPerView: 6,
 	loop: true,
 	autoplay: {

@@ -58,8 +58,8 @@ const PopupCheck: React.FC<PopupCheckProps> = () => {
   };
 
   return (
-    <MaxWidthWrapper className="price">
-      <div className="top mx-auto py-20 text-center flex justify-center">
+    <MaxWidthWrapper className="price py-10">
+      <div className="top mx-auto pb-10 text-center flex justify-center">
         <h2>Okres trwania umowy</h2>
       </div>
       <div className="bottom flex flex-col gap-4">

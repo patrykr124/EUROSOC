@@ -1,0 +1,25 @@
+.active-content {
+  display: flex;
+}
+
+.content {
+  display: none;
+}
+
+.tab button {
+  display: flex;
+  min-width: 245px;
+}
+
+.scrollable-tabs {
+  max-height: 420px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  padding-top: 400px;
+  width: 450px;
+  scrollbar-color: #f9c72f8f rgba(128, 128, 128, 0);
+}
+
+/* .right-tab{
+  width: 3000px;
+} */

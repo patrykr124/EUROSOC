@@ -20,7 +20,7 @@ function Slider() {
             <div
               className="slide"
               style={{
-                backgroundImage: "url(assets/images/started-n26-1920x1080.jpg)",
+                backgroundImage: "url(assets/images/gradient.png)",
               }}
             />
             {/* slide titles */}
@@ -72,7 +72,7 @@ function Slider() {
             <div
               className="slide"
               style={{
-                backgroundImage: "url(assets/images/started-n15-1920x1080.jpg)",
+                backgroundImage: "url(assets/images/gradient1.png)",
               }}
             />
             {/* slide titles */}

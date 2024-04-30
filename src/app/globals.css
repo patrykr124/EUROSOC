@@ -7,12 +7,23 @@ h1 {
 }
 h2 {
   font-size: 45px;
-  font-weight: 400;
+  font-weight: 500;
+  background: -webkit-linear-gradient(
+    190deg,
+    rgb(212, 171, 51) 35%,
+    rgb(0, 0, 0) 65%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h3 {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
+}
+.box-functionality span {
+  font-size: 18px;
+  font-weight: 300;
 }
 
 /* body{
