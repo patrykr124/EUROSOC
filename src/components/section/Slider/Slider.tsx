@@ -35,11 +35,11 @@ function Slider() {
                       </div>
                       <div className="title">
                         <h1
-                          className="title-inner splitting-text-anim-2"
+                          className="title-inner text-7xl splitting-text-anim-2"
                           data-splitting=""
                         >
-                          Jeden <br />
-                          abonament
+                          JEDEN <br />
+                          ABONAMENT
                         </h1>
                       </div>
                       <div className="subtitle scrolla-element-anim-1">
@@ -48,7 +48,7 @@ function Slider() {
                           cyberbezpieczeństwem, bezpieczeństwem informacji,
                           ochroną danych, monitoringiem, zaawansowaną analizą, i
                           odmiejscowieniem krytycznych kopii zapasowych,
-                          odpornych nawet na raMsonWare,
+                          odpornych nawet na ransomware.
                         </p>
                       </div>
                     </div>
@@ -86,17 +86,18 @@ function Slider() {
                         Cybers One
                       </div>
                       <div className="title">
-                        <span
-                          className="title-inner splitting-text-anim-2"
+                        <h1
+                          className="title-inner text-7xl splitting-text-anim-2"
                           data-splitting=""
                         >
                           Wszystkie certyfikaty
-                        </span>
+                        </h1>
                       </div>
                       <div className="subtitle scrolla-element-anim-1">
                         istotne w prowadzeniu Biznesu w kontekście
                         cyberbezpieczeństwa, ochrony informacji i innych
                         obszarów związanych z bezpieczeństwem w jednym miejscu.
+                        <br></br>
                         Gotowe, wraz z zepsołem ekspertów, do natychmiastowego
                         włączenia Twojego Zespołu
                       </div>

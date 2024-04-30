@@ -13,6 +13,7 @@ function FunctionalityGridBottom({ title, desc }: FunctionalityGridTopProps) {
       </div>
       <h3>
         {title}
+        <br></br>
         <span> {desc}</span>
       </h3>
     </div>

@@ -9,9 +9,9 @@ function Functionality() {
   return (
     <div>
       <MaxWidthWrapper>
-        <div className="top py-20">
+        <div id="functional" className="top py-20">
           <div className="title flex justify-center">
-            <h2>Główne funcjonalności Cybers One </h2>
+            <h2>Główne funkcjonalności <span className="text-primary">Cybers One </span></h2>
           </div>
         </div>
         <div className="middle grid grid-cols-4 grid-rows-3">

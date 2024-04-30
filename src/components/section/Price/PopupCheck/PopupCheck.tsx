@@ -59,25 +59,31 @@ const PopupCheck: React.FC<PopupCheckProps> = () => {
 
   return (
     <MaxWidthWrapper className="price py-10">
-      <div className="top mx-auto pb-10 text-center flex justify-center">
-        <h2>Okres trwania umowy</h2>
+      <div
+        id="cennik"
+        className="top mx-auto pb-10 text-center flex justify-center"
+      >
+        <h2>
+          Okres trwania<span className="text-primary"> umowy</span>
+        </h2>
       </div>
       <div className="bottom flex flex-col gap-4">
         <div className="top">
           <ButtonLayout toggle={toggle} handleToggle={handleToggle} />
         </div>
         <div className="box flex flex-col gap-6 lg:flex-row">
-          <div className="left order-2 md:order-2 lg:order-1 bg-secondary rounded-xl p-6 flex flex-col justify-between ">
+          <div className="left order-2 md:order-2 lg:order-1 bg-secondary rounded-xl p-6 flex flex-col ">
             <div className="left-box-content flex flex-col gap-2 ">
               <BasicLayout
                 handleBasicQuantityChange={handleBasicQuantityChange}
                 basicQuantities={basicQuantities}
               />
             </div>
-            <div className="bottom-box mt-4 md:mt-0 flex flex-col gap-2 lg:gap-4 md:gap-4">
+            <div className="bottom-box mt-4 md:mt-14 flex flex-col gap-2 lg:gap-4 md:gap-4">
+              <p>Podaj adres email aby otrzymać wycenę:</p>
               <label className="flex flex-col gap-4">
                 <input
-                  className="p-2 rounded-md"
+                  className="p-3 rounded-md"
                   type="email"
                   placeholder="Twój adres email"
                   value={email}

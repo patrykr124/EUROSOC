@@ -12,7 +12,7 @@ import CertificatesText from "./CertificatesText";
 
 function Certificates() {
   return (
-    <div className="py-20">
+    <div id="onas" className="py-20">
       <div className="certificates">
         <MaxWidthWrapper>
           <Swiper

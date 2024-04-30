@@ -2,19 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
 h1 {
-  font-weight: 700;
+  font-weight: 900;
 }
 h2 {
-  font-size: 45px;
-  font-weight: 500;
-  background: -webkit-linear-gradient(
-    190deg,
-    rgb(212, 171, 51) 35%,
-    rgb(0, 0, 0) 65%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 55px;
+  font-weight: 800;
 }
 
 h3 {
@@ -95,6 +91,3 @@ body {
   padding: 0;
 }
 
-h1 {
-  font-family: "Chakra Petch", sans-serif;
-}

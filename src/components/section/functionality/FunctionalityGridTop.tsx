@@ -13,6 +13,7 @@ function FunctionalityGridTop({ title, desc }: FunctionalityGridTopProps) {
       </div>
       <h3 className="font-bold ">
         {title}
+        <br></br>
         <span> {desc}</span>
       </h3>
     </div>

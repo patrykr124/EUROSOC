@@ -26,14 +26,12 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 100%;
   height: 100%;
   background: #d4ab33;
   z-index: -1;
   transition: 0.3s;
-}
-.callbtn:hover::after {
-  width: 100%;
+  border-radius: 10px;
 }
 
 .title a {
@@ -63,7 +61,7 @@
   position: relative;
   margin-bottom: 30px;
   font-size: 12px;
-  text-transform: uppercase;
+
   opacity: 0.85;
 }
 
@@ -76,7 +74,6 @@
   position: relative;
   display: inline-block;
   vertical-align: top;
-  font-family: "Playfair Display";
   font-size: 152px;
   line-height: 1;
   font-weight: 400;
@@ -522,7 +519,6 @@
   position: relative;
   margin-bottom: 10px;
   font-size: 14px;
-  text-transform: uppercase;
 }
 
 .hero-main-slider .slide-titles .subtitle {
@@ -535,7 +531,6 @@
 .hero-main-slider .slide-titles .title {
   position: relative;
   display: block;
-  font-family: "Chakra Petch", sans-serif;
   font-size: 108px;
   line-height: 1;
   font-weight: 500;
@@ -787,7 +782,6 @@ body .hero-main-slider .swiper-pagination {
   margin-bottom: 10px;
   font-size: 12px;
   color: #fff;
-  text-transform: uppercase;
 }
 
 .section.full-slider .slide-titles .title {
@@ -795,9 +789,9 @@ body .hero-main-slider .swiper-pagination {
   display: inline-block;
   vertical-align: top;
   font-family: "Playfair Display";
-  font-size: 112px;
+  font-size: 88px;
   line-height: 0.9;
-  font-weight: 400;
+  font-weight: 800;
   margin: 0;
   color: inherit;
 }

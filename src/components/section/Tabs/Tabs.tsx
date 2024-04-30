@@ -12,7 +12,7 @@ function Tabs() {
     setActiveTab(index);
   };
   return (
-    <div className="tabs py-10 ">
+    <div id="jak" className="tabs py-10 ">
       <MaxWidthWrapper>
         <div className="box flex border-2 rounded-2xl p-4">
           <ContentTabs

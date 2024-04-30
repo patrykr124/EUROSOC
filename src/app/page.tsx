@@ -1,4 +1,5 @@
 import NavBar from "@/components/Navbar/NavBar";
+import FAQ from "@/components/section/FAQ/FAQ";
 import Footer from "@/components/section/Footer/Footer";
 import PopupCheck from "@/components/section/Price/PopupCheck/PopupCheck";
 import Slider from "@/components/section/Slider/Slider";
@@ -13,10 +14,11 @@ export default function Home() {
       <NavBar />
       <Slider />
       <Functionality />
-      <PopupCheck />
       <Tabs />
+      <PopupCheck />
       <Certificates />
       <Count />
+      <FAQ />
       <Footer />
     </main>
   );
