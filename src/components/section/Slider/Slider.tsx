@@ -56,7 +56,7 @@ function Slider() {
                       <Link legacyBehavior href="/work-single">
                         <a
                           data-splitting=""
-                          className="callbtn btn more-btn scrolla-element-anim-1"
+                          className="callbtn text-white btn more-btn scrolla-element-anim-1"
                         >
                           Oblicz cenę
                         </a>

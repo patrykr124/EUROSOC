@@ -31,13 +31,13 @@ export const basicData = [
 export const variableData = [
     {
 		id: 1,
-		variable: "CyberOut: Inspektor Ochrny Danych",
+		variable: "CyberOut: Inspektor Ochrony Danych",
 		quantity: 1,
 		desc: "Wsparcie merytoryczne w bieżących problemach i naruszeniach, utrzymanie zgodności dokumentacji, szkolenia wstępne i okresowe, coroczny Audit zgodności z RODO",
 	},
 	{
 		id: 2,
-		variable: "CyberOut: Pełnomocnik ds.Systemu Zarządzania Bezpieczeństwem informacji",
+		variable: "CyberOut: Pełnomocnik ds.Systemu Zarządzania Bezpieczeństwem Informacji",
 		quantity: 1,
 		desc: "Wsparcie merytoryczne w bieżących problemach i naruszeniach, utrzymanie zgodności dokumentacji, szkolenia wstępne i okresowe, coroczny Audit zgodności z RODO",
 	},

@@ -7,10 +7,10 @@ interface CountLayoutProps {
 }
 function CountLayout({ Icon, count, title, add }: CountLayoutProps) {
   return (
-    <div className="box flex gap-4 justify-center">
+    <div className="box flex gap-4 justify-center ">
       <div className="left">
         <div className="icon">
-          <Icon className="text-primary" size={50} strokeWidth={0.5} />
+          <Icon className="text-primary" size={50} strokeWidth={1.2} />
         </div>
       </div>
       <div className="right flex flex-col gap-2">
@@ -20,7 +20,7 @@ function CountLayout({ Icon, count, title, add }: CountLayoutProps) {
           </span>
         </div>
         <div className="title text-muted-foreground">
-          <h4>{title}</h4>
+          <h5>{title}</h5>
         </div>
       </div>
     </div>

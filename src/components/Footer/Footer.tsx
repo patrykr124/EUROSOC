@@ -10,7 +10,7 @@ function Footer() {
       <MaxWidthWrapper>
         <div className="box-grid grid grid-cols-3">
           <div className="left">
-            <div className="box">
+            <div className="box flex flex-col gap-2">
               <Link href="/">
                 <Image
                   src="/assets/images/logo.png"

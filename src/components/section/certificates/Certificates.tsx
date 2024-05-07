@@ -12,7 +12,19 @@ import CertificatesText from "./CertificatesText";
 
 function Certificates() {
   return (
-    <div id="onas" className="py-20">
+    <div id="onas" className="pb-24 bg-[#3C3C3C]">
+      <div className="title flex flex-col justify-center items-center py-24">
+        <h2 className="text-white">
+          Nasze <span className="text-primary">certyfikaty</span>
+        </h2>
+        <p className="text-center text-white max-w-4xl ">
+          Nasze certyfikaty cyberbezpieczeństwa, w tym ISO 27001, OSCP, eCPPT, i
+          inne, potwierdzają najwyższy standard wiedzy i umiejętności naszego
+          zespołu. Są dowodem na to, że stosujemy najnowocześniejsze metody i
+          narzędzia, aby zapewnić ochronę danych i infrastruktury naszych
+          klientów.
+        </p>
+      </div>
       <div className="certificates">
         <MaxWidthWrapper>
           <Swiper

@@ -6,7 +6,7 @@ function Count() {
   return (
     <div>
       <MaxWidthWrapper>
-        <div className="py-20 border-t-2 flex gap-12">
+        <div className="py-20 flex gap-12 border-b-2">
           <CountLayout
             Icon={ShieldCheck}
             count={1000}

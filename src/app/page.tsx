@@ -1,6 +1,6 @@
 import NavBar from "@/components/Navbar/NavBar";
 import FAQ from "@/components/section/FAQ/FAQ";
-import Footer from "@/components/section/Footer/Footer";
+import Footer from "@/components/Footer/Footer";
 import PopupCheck from "@/components/section/Price/PopupCheck/PopupCheck";
 import Slider from "@/components/section/Slider/Slider";
 import Tabs from "@/components/section/Tabs/Tabs";
@@ -10,7 +10,7 @@ import Functionality from "@/components/section/functionality/Functionality";
 
 export default function Home() {
   return (
-    <main>
+    <main >
       <NavBar />
       <Slider />
       <Functionality />

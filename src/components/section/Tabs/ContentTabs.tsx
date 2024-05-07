@@ -1,41 +1,27 @@
-import Image from "next/image";
 import React from "react";
+import BoxContent from "./BoxContent";
 
 interface ContentTabsProps {
   className: string;
   title: string;
-  desc: string;
-  imgSrc: string;
-  imgAlt: string;
-  imgWidth: number;
-  imgHeight: number;
+  data: Array<{ id: number; topic: string; topicDesc: string }>;
 }
-function ContentTabs({
-  className,
-  title,
-  desc,
-  imgSrc,
-  imgAlt,
-  imgWidth,
-  imgHeight,
-}: ContentTabsProps) {
+function ContentTabs({ className, title, data }: ContentTabsProps) {
   return (
-    <div className="content-box flex justify-center ">
+    <div className="content-boxflex justify-center ">
       <div className={className}>
-        <div className="left-side bg-white -ml-14 border-2 rounded-xl flex items-center shadow-xl">
-          <Image
-            src={imgSrc}
-            alt={imgAlt}
-            width={imgWidth}
-            height={imgHeight}
-          />
-        </div>
-        <div className="middle-side w-4/5  flex justify-center items-center ">
-          <div className=" flex flex-col gap-4 p-4">
-            <div className="title">
-              <h2>{title}</h2>
-            </div>
-            <div className="text">{desc}</div>
+        <div className="middle-side  flex flex-col justify-center  ">
+          <div className="title p-4">
+            <h3 className="text-3xl font-bold">{title}</h3>
+          </div>
+          <div className="grid grid-cols-4 grid-rows-2 gap-5 p-2  ">
+            {data.map((item) => (
+              <BoxContent
+                key={item.id}
+                topic={item.topic}
+                topicDesc={item.topicDesc}
+              />
+            ))}
           </div>
         </div>
       </div>

@@ -3,12 +3,12 @@ import React from "react";
 
 function ButtonLayout({ toggle, handleToggle }) {
   return (
-    <div className=" bg-secondary justify-center flex gap-2 flex-col lg:flex-row md:flex-row md:gap-6 lg:gap-6 rounded-2xl p-2">
+    <div className=" bg-secondary justify-center flex gap-2 flex-col lg:flex-row md:flex-row md:gap-6 lg:gap-6 p-2 rounded-xl">
       <Button
         className={
           toggle === 1
-            ? "bg-black text-white hover:bg-black hover:text-white"
-            : ""
+            ? "bg-black text-white hover:bg-black hover:text-white rounded-xl"
+            : "rounded-xl"
         }
         onClick={() => handleToggle(1)}
         size="lg"
@@ -19,8 +19,8 @@ function ButtonLayout({ toggle, handleToggle }) {
       <Button
         className={
           toggle === 2
-            ? "bg-black text-white hover:bg-black hover:text-white"
-            : ""
+            ? "bg-black text-white hover:bg-black hover:text-white rounded-xl"
+            : "rounded-xl"
         }
         onClick={() => handleToggle(2)}
         size="lg"
@@ -31,8 +31,8 @@ function ButtonLayout({ toggle, handleToggle }) {
       <Button
         className={
           toggle === 3
-            ? "bg-black text-white hover:bg-black hover:text-white"
-            : ""
+            ? "bg-black text-white hover:bg-black hover:text-white rounded-xl"
+            : "rounded-xl"
         }
         onClick={() => handleToggle(3)}
         size="lg"

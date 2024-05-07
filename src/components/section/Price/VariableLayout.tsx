@@ -32,13 +32,13 @@ function VariableLayout({
                 }
               />
               <div className="icon relative">
-                <Info
+                <span
                   onMouseEnter={() => setHover(product.id)}
                   onMouseLeave={() => setHover(null)}
-                  size={20}
-                  strokeWidth={1.5}
-                  className="cursor-pointer"
-                />
+                  className="cursor-pointer p-1 text-sm text-tertiary"
+                >
+                  i
+                </span>
                 {hover === product.id && <PopupInfo desc={product.desc} />}
               </div>
               <div className="product">
