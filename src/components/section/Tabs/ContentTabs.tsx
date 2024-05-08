@@ -5,16 +5,18 @@ interface ContentTabsProps {
   className: string;
   title: string;
   data: Array<{ id: number; topic: string; topicDesc: string }>;
+  desc: string;
 }
-function ContentTabs({ className, title, data }: ContentTabsProps) {
+function ContentTabs({ className, title, data, desc }: ContentTabsProps) {
   return (
-    <div className="content-boxflex justify-center ">
+    <div className="content-box flex justify-center ">
       <div className={className}>
-        <div className="middle-side  flex flex-col justify-center  ">
-          <div className="title p-4">
+        <div className="middle-side gap-10  flex flex-col justify-center ">
+          <div className="title  px-4">
             <h3 className="text-3xl font-bold">{title}</h3>
+            <h4>{desc}</h4>
           </div>
-          <div className="grid grid-cols-4 grid-rows-2 gap-5 p-2  ">
+          <div className="grid grid-cols-4 grid-rows-2 gap-5  ">
             {data.map((item) => (
               <BoxContent
                 key={item.id}

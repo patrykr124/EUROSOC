@@ -11,7 +11,7 @@ function BasicLayout({ handleBasicQuantityChange, basicQuantities }) {
         {basicData.map((data) => (
           <label
             key={data.id}
-            className="box flex flex-row gap-4 justify-between items-center"
+            className="box flex flex-row gap-4 py-1 justify-between items-center"
           >
             <p>{data.title}:</p>
             <input

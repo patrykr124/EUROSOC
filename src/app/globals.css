@@ -18,20 +18,20 @@ h3 {
   font-weight: 500;
 }
 
-h4{
+h4 {
   font-size: 18px;
-  font-weight: 600;
-
+  font-weight: 400;
 }
 .box-functionality span {
   font-size: 18px;
   font-weight: 300;
 }
 
-/* body{
-  color: hsl(0, 0%, 94%);
-} */
 
+
+/* body{
+  color: hsl(44, 100%, 50%);
+} */
 
 @layer base {
   :root {
@@ -41,7 +41,7 @@ h4{
     --card-foreground: 20 14.3% 4.1%;
     --popover: 0 0% 100%;
     --popover-foreground: 20 14.3% 4.1%;
-    --primary: 47.9 95.8% 53.1%;
+    --primary: 44, 100%, 50%;
     --primary-foreground: 26 83.3% 14.1%;
     --secondary: 10, 0%, 95%;
     --secondary-foreground: 24 9.8% 10%;
@@ -65,7 +65,7 @@ h4{
     --card-foreground: 60 9.1% 97.8%;
     --popover: 20 14.3% 4.1%;
     --popover-foreground: 60 9.1% 97.8%;
-    --primary: 47.9 95.8% 53.1%;
+    --primary: 44, 100%, 50%;
     --primary-foreground: 26 83.3% 14.1%;
     --secondary: 12 6.5% 15.1%;
     --secondary-foreground: 60 9.1% 97.8%;
@@ -81,6 +81,8 @@ h4{
     --tertiary: 345, 100%, 40%;
   }
 }
+
+
 
 @layer base {
   * {

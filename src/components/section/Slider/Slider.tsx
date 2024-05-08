@@ -4,6 +4,7 @@ import { home1SliderProps } from "./sliderProps";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./slider.css";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import { Button } from "@/components/ui/button";
 
 function Slider() {
   return (
@@ -38,13 +39,13 @@ function Slider() {
                           className="title-inner text-7xl splitting-text-anim-2"
                           data-splitting=""
                         >
-                          JEDEN <br />
-                          ABONAMENT
+                          Jeden <br />
+                          Abonament
                         </h1>
                       </div>
                       <div className="subtitle scrolla-element-anim-1">
                         <p className=" max-w-prose">
-                          na rozwiązanie wszytskich Twoich problemów z
+                          na rozwiązanie wszystkich Twoich problemów z
                           cyberbezpieczeństwem, bezpieczeństwem informacji,
                           ochroną danych, monitoringiem, zaawansowaną analizą, i
                           odmiejscowieniem krytycznych kopii zapasowych,
@@ -53,14 +54,15 @@ function Slider() {
                       </div>
                     </div>
                     <div className="more-bts">
-                      <Link legacyBehavior href="/work-single">
-                        <a
+                      <Button>
+                        <Link
+                          href="#cennik"
                           data-splitting=""
-                          className="callbtn text-white btn more-btn scrolla-element-anim-1"
+                          className="text-xl text-white btn more-btn scrolla-element-anim-1"
                         >
                           Oblicz cenę
-                        </a>
-                      </Link>
+                        </Link>
+                      </Button>
                     </div>
                   </div>
                 </div>
@@ -103,14 +105,15 @@ function Slider() {
                       </div>
                     </div>
                     <div className="more-bts">
-                      <Link legacyBehavior href="/work-single">
-                        <a
+                      <Button>
+                        <Link
+                          href="#cennik"
                           data-splitting=""
-                          className="callbtn text-white btn more-btn scrolla-element-anim-1"
+                          className="text-xl text-white btn more-btn scrolla-element-anim-1"
                         >
                           Oblicz cenę
-                        </a>
-                      </Link>
+                        </Link>
+                      </Button>
                     </div>
                   </div>
                 </div>
