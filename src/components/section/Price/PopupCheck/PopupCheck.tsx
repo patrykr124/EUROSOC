@@ -66,7 +66,6 @@ const PopupCheck: React.FC<PopupCheckProps> = () => {
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        
       }}
       className="cennik"
     >
@@ -121,9 +120,11 @@ const PopupCheck: React.FC<PopupCheckProps> = () => {
                     <input type="checkbox" />
                     <span className="ml-2 text-muted-foreground">
                       Wyrażam zgodę na przetwarzanie danych
-                      <Link href="/" className="text-primary hover:text-black ">
-                        {" "}
-                        więcej...
+                      <Link
+                        href="/politykaprywatnosci"
+                        className="text-primary hover:text-black "
+                      >
+                          {' '}więcej...
                       </Link>
                     </span>
                   </label>

@@ -39,12 +39,12 @@ function Functionality() {
           <FunctionalityGridTop
             icon={<ScanEye />}
             title="Monitoring"
-            desc="w czasie rzeczywistym                   z dokładnością do 1s"
+            desc="w czasie rzeczywistym                            z dokładnością do 1s"
           />
           <FunctionalityGridTop
             icon={<ShieldCheck />}
             title="Obniżenie"
-            desc="ryzyk związanych                             z bezpieczeństwem"
+            desc="ryzyk związanych                                    z bezpieczeństwem"
           />
           <FunctionalityGridTop
             icon={<HandCoins />}
@@ -70,7 +70,7 @@ function Functionality() {
           <FunctionalityGridTop
             icon={<RefreshCcw />}
             title="Codzienne"
-            desc="skanowanie całej infrastruktury     w poszukiwaniu nowych podatności"
+            desc="skanowanie całej infrastruktury          w poszukiwaniu nowych podatności"
           />
           <FunctionalityGridTop
             icon={<Brain />}

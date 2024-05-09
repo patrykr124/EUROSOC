@@ -53,7 +53,7 @@ function Footer() {
           </div>
           <div className="right flex justify-center ">
             <div className="nav-box flex flex-col justify-end ">
-              <Link href="/polityka-prywatnosci">Polityka prywatności</Link>
+              <Link href="/politykaprywatnosci">Polityka prywatności</Link>
               <Link href="/regulamin">Regulamin</Link>
               <Link href="/kontakt">Kontakt</Link>
             </div>

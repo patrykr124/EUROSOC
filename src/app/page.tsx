@@ -1,4 +1,4 @@
-import NavBar from "@/components/Navbar/NavBar";
+
 import FAQ from "@/components/section/FAQ/FAQ";
 import Footer from "@/components/Footer/Footer";
 import PopupCheck from "@/components/section/Price/PopupCheck/PopupCheck";
@@ -11,7 +11,6 @@ import Functionality from "@/components/section/functionality/Functionality";
 export default function Home() {
   return (
     <main >
-      <NavBar />
       <Slider />
       <Functionality />
       <Tabs />
@@ -19,7 +18,6 @@ export default function Home() {
       <Certificates />
       <Count />
       <FAQ />
-      <Footer />
     </main>
   );
 }

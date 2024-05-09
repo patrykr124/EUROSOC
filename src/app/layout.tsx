@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import NavBar from "@/components/Navbar/NavBar";
+import Footer from "@/components/Footer/Footer";
 
 const inter = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
@@ -22,7 +24,9 @@ export default function RootLayout({
     <html lang="en" className="h-full">
       <body className={cn("relative h-full antialiased", inter.className)}>
         <main className="relative flex flex-col min-h-screen">
+          <NavBar />
           <div className="flex-grow flex-1">{children}</div>
+          <Footer />
         </main>
       </body>
     </html>

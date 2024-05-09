@@ -11,7 +11,7 @@ function ContentTabs({ className, title, data, desc }: ContentTabsProps) {
   return (
     <div className="content-box flex justify-center ">
       <div className={className}>
-        <div className="middle-side gap-10  flex flex-col justify-center ">
+        <div className="middle-side gap-10  flex flex-col ">
           <div className="title  px-4">
             <h3 className="text-3xl font-bold">{title}</h3>
             <h4>{desc}</h4>

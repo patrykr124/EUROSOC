@@ -23,7 +23,7 @@ function FunctionalityGridTop({
       <h3 className="font-bold ">
         {title}
         <br></br>
-        <p className="font-light whitespace-break-spaces">{desc}</p>
+        <p className="font-light text-base whitespace-break-spaces">{desc}</p>
       </h3>
     </div>
   );

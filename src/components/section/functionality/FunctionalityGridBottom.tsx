@@ -23,7 +23,7 @@ function FunctionalityGridBottom({
       <h3>
         {title}
         <br></br>
-        <p className="max-w-xl font-light"> {desc}</p>
+        <p className="max-w-xl text-base font-light"> {desc}</p>
       </h3>
     </div>
   );
