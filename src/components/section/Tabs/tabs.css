@@ -10,14 +10,26 @@
   display: flex;
   min-width: 245px;
 }
-
-.scrollable-tabs {
-  max-height: 630px;
-  overflow-y: scroll;
-  scrollbar-width: thin;
-  padding-top: 200px;
-  scrollbar-color: #ffbb0084 rgba(128, 128, 128, 0.11);
+@media only screen and (min-width: 1280px) {
+  .scrollable-tabs {
+    max-height: 630px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    padding-top: 200px;
+    scrollbar-color: #ffbb0084 rgba(128, 128, 128, 0.11);
+  }
 }
+@media only screen and (max-width: 574px) {
+  .scrollable-tabs {
+    max-height: 430px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #ffbb0084 rgba(128, 128, 128, 0.11);
+  }
+}
+
+
+
 
 /* .right-tab{
   width: 3000px;

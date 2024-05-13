@@ -5,8 +5,8 @@ interface BoxContentProps {
 }
 function BoxContent({ topic, topicDesc }: BoxContentProps) {
   return (
-    <div className="box border-2 space-y-1 rounded-2xl p-4 shadow-lg z-10 bg-white">
-      <h3 className="font-bold">{topic}</h3>
+    <div className="box border-2 space-y-1 rounded-2xl p-3 shadow-lg z-10 bg-white">
+      <h5 className="font-bold leading-tight">{topic}</h5>
       <p className="text-sm">{topicDesc}</p>
     </div>
   );

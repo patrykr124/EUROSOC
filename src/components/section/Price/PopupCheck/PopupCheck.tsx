@@ -70,7 +70,7 @@ const PopupCheck: React.FC<PopupCheckProps> = () => {
       className="cennik"
     >
       <MaxWidthWrapper className="price pb-24">
-        <div className="top flex-col mx-auto py-24 text-center flex justify-center items-center">
+        <div className="top flex-col mx-auto py-12 md:py-24 text-center flex justify-center items-center">
           <h2>
             Okres trwania<span className="text-primary"> umowy</span>
           </h2>
@@ -85,7 +85,7 @@ const PopupCheck: React.FC<PopupCheckProps> = () => {
             <ButtonLayout toggle={toggle} handleToggle={handleToggle} />
           </div>
           <div className="box flex flex-col gap-6 lg:flex-row">
-            <div className="left order-2 md:order-2 lg:order-1 bg-secondary rounded-xl p-6 flex flex-col ">
+            <div className="left order-2 md:order-2 lg:order-1 bg-secondary rounded-xl md:p-6 p-2 flex flex-col ">
               <div className="left-box-content flex flex-col gap-2 ">
                 <BasicLayout
                   handleBasicQuantityChange={handleBasicQuantityChange}
@@ -131,7 +131,7 @@ const PopupCheck: React.FC<PopupCheckProps> = () => {
                 </div>
               </div>
             </div>
-            <div className="right order-1 md:order-1 lg:order-2 flex flex-col w-full bg-secondary rounded-xl p-6">
+            <div className="right order-1 md:order-1 lg:order-2 flex flex-col w-full bg-secondary rounded-xl md:p-6 p-2">
               <VariableLayout
                 quantities={quantities}
                 handleQuantityChange={handleQuantityChange}

@@ -6,7 +6,7 @@ import FQALayout from "./FQALayout";
 function FAQ() {
   return (
     <div id="faq">
-      <div className="title flex flex-col items-center justify-center py-24">
+      <div className="title flex flex-col items-center justify-center md:py-24 py-12">
         <h2>
           FA<span className="text-primary">Q</span>
         </h2>
@@ -14,11 +14,11 @@ function FAQ() {
           Najczęsciej zadawane pytania
         </p>
       </div>
-      <MaxWidthWrapper className="flex gap-20 ">
-        <div className="flex flex-1 flex-col right gap-8">
+      <MaxWidthWrapper className="flex flex-col md:flex-row md:gap-20 gap-4 ">
+        <div className="flex flex-1 flex-col right md:gap-8 gap-2">
           <div className="faq-box">
-            <div className="title mb-4">
-              <h3 >Ogólne pytania o Cybers One</h3>
+            <div className="title mb-4  bg-primary p-4 rounded-xl">
+              <h3>Ogólne pytania o Cybers One</h3>
             </div>
             <FQALayout
               title="Czym jest Cybers One?"
@@ -34,7 +34,7 @@ function FAQ() {
             />
           </div>
           <div className="faq-box">
-            <div className="title mb-4">
+            <div className="title mb-4 bg-primary p-4 rounded-xl">
               <h3>Ochrona danych i zarządzanie bezpieczeństwem informacji</h3>
             </div>
             <FQALayout
@@ -51,7 +51,7 @@ function FAQ() {
             />
           </div>
           <div className="faq-box ">
-            <div className="title mb-4">
+            <div className="title mb-4 bg-primary p-4 rounded-xl">
               <h3>Monitorowanie infrastruktury IT</h3>
             </div>
             <FQALayout
@@ -64,7 +64,7 @@ function FAQ() {
             />
           </div>
           <div className="faq-box">
-            <div className="title mb-4">
+            <div className="title mb-4 bg-primary p-4 rounded-xl">
               <h3>Ochrona przed ransomware</h3>
             </div>
             <FQALayout
@@ -77,7 +77,7 @@ function FAQ() {
             />
           </div>
           <div className="faq-box">
-            <div className="title mb-4">
+            <div className="title mb-4 bg-primary p-4 rounded-xl">
               <h3>Testy penetracyjne i ochrona aplikacji web</h3>
             </div>
             <FQALayout
@@ -90,7 +90,7 @@ function FAQ() {
             />
           </div>
           <div className="faq-box">
-            <div className="title mb-4">
+            <div className="title mb-4 bg-primary p-4 rounded-xl">
               <h3>Edukacja i świadomość bezpieczeństwa</h3>
             </div>
             <FQALayout
@@ -105,7 +105,7 @@ function FAQ() {
         </div>
         <div className="left flex flex-col flex-1">
           <div className="faq-box">
-            <div className="title mb-4">
+            <div className="title mb-4 bg-primary p-4 rounded-xl">
               <h3>Dodatkowe pytania</h3>
             </div>
             <FQALayout

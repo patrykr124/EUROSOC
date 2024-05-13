@@ -35,9 +35,9 @@ function VariableLayout({
                 <span
                   onMouseEnter={() => setHover(product.id)}
                   onMouseLeave={() => setHover(null)}
-                  className="cursor-pointer p-1 text-sm text-tertiary"
+                  className="cursor-pointer text-sm text-tertiary"
                 >
-                  i
+                     <Info size={16} strokeWidth={2}  />
                 </span>
                 {hover === product.id && <PopupInfo desc={product.desc} />}
               </div>

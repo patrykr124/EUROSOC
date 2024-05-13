@@ -15,16 +15,17 @@ function FunctionalityGridTop({
 }: FunctionalityGridTopProps) {
   return (
     <div
-      className={`box-functionality flex flex-col gap-4 p-6 border-2 border-t-0 border-l-0 ${className}`}
+      className={`box-functionality flex flex-col gap-4 p-6 border-2 border-t-0 xl:border-l-0 items-center md:items-start  ${className}`}
     >
-      <div className="icon-box hover:shadow-xl  border-black border-2 border-primary bg-primary  rounded-3xl w-12 h-12 flex justify-center items-center ">
+      <div className="icon-box hover:shadow-xl   border-black border-2 border-primary bg-primary  rounded-3xl w-12 h-12 flex justify-center items-center ">
         {icon}
       </div>
-      <h3 className="font-bold ">
-        {title}
-        <br></br>
-        <p className="font-light text-base whitespace-break-spaces">{desc}</p>
-      </h3>
+      <div className="text flex flex-col items-center md:items-start">
+        <h3 className="font-bold  ">{title}</h3>
+        <p className="font-light text-base whitespace-break-spaces flex text-center md:text-start">
+          {desc}
+        </p>
+      </div>
     </div>
   );
 }

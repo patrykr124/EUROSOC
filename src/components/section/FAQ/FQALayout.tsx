@@ -15,11 +15,11 @@ function FQALayout({ title, desc }: FQALayoutProps) {
     <div>
       <Accordion className="mt-1" type="single" collapsible>
         <AccordionItem className="rounded-xl bg-secondary shadow-sm" value="item-1">
-          <AccordionTrigger className="text-start bg-primary rounded-xl p-4 min-h-20">
+          <AccordionTrigger className="text-start bg-[#dddddd] rounded-xl p-4 min-h-20">
             <p className=" font-normal text-[15px]  max-w-prose">{title}</p>
           </AccordionTrigger>
-          <AccordionContent>
-            <p className="p-4 bg-secondary rounded-xl">{desc}</p>
+          <AccordionContent className=" bg-[#f4f2f2c5]" >
+            <p className="p-4 rounded-xl">{desc}</p>
           </AccordionContent>
         </AccordionItem>
       </Accordion>

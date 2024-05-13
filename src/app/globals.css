@@ -5,8 +5,10 @@
 html {
   scroll-behavior: smooth;
 }
+
 h1 {
   font-weight: 900;
+  font-size: 75px;
 }
 h2 {
   font-size: 55px;
@@ -22,15 +24,44 @@ h4 {
   font-size: 18px;
   font-weight: 400;
 }
+
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+}
+
 .box-functionality span {
   font-size: 18px;
   font-weight: 300;
 }
 
-
-
 /* body{
-  color: hsl(44, 100%, 50%);
+  color: hsl(0, 0%, 87%);
 } */
 
 @layer base {
@@ -43,7 +74,7 @@ h4 {
     --popover-foreground: 20 14.3% 4.1%;
     --primary: 44, 100%, 50%;
     --primary-foreground: 26 83.3% 14.1%;
-    --secondary: 10, 0%, 95%;
+    --secondary: 0, 0%, 87%;
     --secondary-foreground: 24 9.8% 10%;
     --muted: 60 4.8% 95.9%;
     --muted-foreground: 25 5.3% 44.7%;
@@ -67,7 +98,7 @@ h4 {
     --popover-foreground: 60 9.1% 97.8%;
     --primary: 44, 100%, 50%;
     --primary-foreground: 26 83.3% 14.1%;
-    --secondary: 12 6.5% 15.1%;
+    --secondary: 0, 0%, 87%;
     --secondary-foreground: 60 9.1% 97.8%;
     --muted: 12 6.5% 15.1%;
     --muted-foreground: 24 5.4% 63.9%;
@@ -81,8 +112,6 @@ h4 {
     --tertiary: 345, 100%, 40%;
   }
 }
-
-
 
 @layer base {
   * {

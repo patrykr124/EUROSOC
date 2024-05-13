@@ -4,7 +4,7 @@ function CertificatesText() {
   return (
     <div className="flex justify-center">
       <p
-        className="text-white max-w-prose text-center"
+        className=" max-w-prose text-center text-muted-foreground"
       >
         Posiadamy wiele prestiżowych certyfikatów które gwarantują ci wysoką
         jakość dostarczoncyh usług.

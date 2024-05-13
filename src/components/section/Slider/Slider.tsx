@@ -36,7 +36,7 @@ function Slider() {
                       </div>
                       <div className="title">
                         <h1
-                          className="title-inner text-7xl splitting-text-anim-2"
+                          className="title-inner splitting-text-anim-2"
                           data-splitting=""
                         >
                           Jeden <br />
@@ -89,7 +89,7 @@ function Slider() {
                       </div>
                       <div className="title">
                         <h1
-                          className="title-inner text-7xl splitting-text-anim-2"
+                          className="title-inner splitting-text-anim-2"
                           data-splitting=""
                         >
                           Wszystkie certyfikaty

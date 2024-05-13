@@ -22,9 +22,9 @@ function Functionality() {
   return (
     <div>
       <MaxWidthWrapper>
-        <div id="functional" className="top py-24">
+        <div id="functional" className="top py-12 md:py-24">
           <div className="title flex flex-col justify-center items-center ">
-            <h2>
+            <h2 className="md:block flex flex-col items-center justify-center text-center">
               Podstawowe funkcjonalności{" "}
               <span className="text-primary">Cybers One </span>
             </h2>
@@ -35,16 +35,16 @@ function Functionality() {
             </p>
           </div>
         </div>
-        <div className="middle grid grid-cols-4 grid-rows-3 pb-24">
+        <div className="middle grid md:grid-cols-3 xl:grid-cols-4 grid-rows-3 md:pb-24 grid-cols-2 ">
           <FunctionalityGridTop
             icon={<ScanEye />}
             title="Monitoring"
-            desc="w czasie rzeczywistym                            z dokładnością do 1s"
+            desc="w czasie rzeczywistym z dokładnością do 1s"
           />
           <FunctionalityGridTop
             icon={<ShieldCheck />}
             title="Obniżenie"
-            desc="ryzyk związanych                                    z bezpieczeństwem"
+            desc="ryzyk związanych z bezpieczeństwem"
           />
           <FunctionalityGridTop
             icon={<HandCoins />}
@@ -70,7 +70,7 @@ function Functionality() {
           <FunctionalityGridTop
             icon={<RefreshCcw />}
             title="Codzienne"
-            desc="skanowanie całej infrastruktury          w poszukiwaniu nowych podatności"
+            desc="skanowanie całej infrastruktury w poszukiwaniu nowych podatności"
           />
           <FunctionalityGridTop
             icon={<Brain />}
