@@ -48,9 +48,10 @@ function Certificates() {
               <div className="about__slide flex items-center justify-center align-middle relative md:w-[220px] md:h-[180px] w-[160px] h-[130px]">
                 <Image
                   src="/assets/images/1.png"
-                  alt="collab1"
+                  alt="certificat1"
                   fill
-                  objectFit="cover"
+                  style={{ objectFit: "cover" }}
+                  sizes="(max-width: 768px) 220px, 180px"
                 />
               </div>
             </SwiperSlide>
@@ -60,7 +61,8 @@ function Certificates() {
                   src="/assets/images/2.png"
                   alt="collab1"
                   fill
-                  objectFit="cover"
+                  style={{ objectFit: "cover" }}
+                  sizes="(max-width: 768px) 220px, 180px"
                 />
               </div>
             </SwiperSlide>
@@ -70,7 +72,8 @@ function Certificates() {
                   src="/assets/images/3.png"
                   alt="collab1"
                   fill
-                  objectFit="cover"
+                  style={{ objectFit: "cover" }}
+                  sizes="(max-width: 768px) 220px, 180px"
                 />
               </div>
             </SwiperSlide>
@@ -80,7 +83,8 @@ function Certificates() {
                   src="/assets/images/4.png"
                   alt="collab1"
                   fill
-                  objectFit="cover"
+                  style={{ objectFit: "cover" }}
+                  sizes="(max-width: 768px) 220px, 180px"
                 />
               </div>
             </SwiperSlide>
@@ -90,7 +94,8 @@ function Certificates() {
                   src="/assets/images/5.png"
                   alt="collab1"
                   fill
-                  objectFit="cover"
+                  style={{ objectFit: "cover" }}
+                  sizes="(max-width: 768px) 220px, 180px"
                 />
               </div>
             </SwiperSlide>
@@ -100,7 +105,8 @@ function Certificates() {
                   src="/assets/images/6.png"
                   alt="collab1"
                   fill
-                  objectFit="cover"
+                  style={{ objectFit: "cover" }}
+                  sizes="(max-width: 768px) 220px, 180px"
                 />
               </div>
             </SwiperSlide>
@@ -110,7 +116,8 @@ function Certificates() {
                   src="/assets/images/7.png"
                   alt="collab1"
                   fill
-                  objectFit="cover"
+                  style={{ objectFit: "cover" }}
+                  sizes="(max-width: 768px) 220px, 180px"
                 />
               </div>
             </SwiperSlide>
@@ -120,7 +127,8 @@ function Certificates() {
                   src="/assets/images/8.png"
                   alt="collab1"
                   fill
-                  objectFit="cover"
+                  style={{ objectFit: "cover" }}
+                  sizes="(max-width: 768px) 220px, 180px"
                 />
               </div>
             </SwiperSlide>
@@ -130,7 +138,8 @@ function Certificates() {
                   src="/assets/images/9.png"
                   alt="collab1"
                   fill
-                  objectFit="cover"
+                  style={{ objectFit: "cover" }}
+                  sizes="(max-width: 768px) 220px, 180px"
                 />
               </div>
             </SwiperSlide>
@@ -140,7 +149,8 @@ function Certificates() {
                   src="/assets/images/10.png"
                   alt="collab1"
                   fill
-                  objectFit="cover"
+                  style={{ objectFit: "cover" }}
+                  sizes="(max-width: 768px) 220px, 180px"
                 />
               </div>
             </SwiperSlide>
@@ -150,7 +160,8 @@ function Certificates() {
                   src="/assets/images/11.png"
                   alt="collab11"
                   fill
-                  objectFit="cover"
+                  style={{ objectFit: "cover" }}
+                  sizes="(max-width: 768px) 220px, 180px"
                 />
               </div>
             </SwiperSlide>

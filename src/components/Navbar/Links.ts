@@ -6,14 +6,15 @@ export const LinksData = [
   },
   {
     id: 2,
-    title: " Cennik",
-    href: "#cennik",
-  },
-  {
-    id: 3,
     title: "Jak to działa?",
     href: "#jak",
   },
+  {
+    id: 3,
+    title: " Cennik",
+    href: "#cennik",
+  },
+ 
   {
     id: 4,
     title: "O nas",

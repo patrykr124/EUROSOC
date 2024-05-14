@@ -11,13 +11,14 @@ function NavBar() {
       <header className="relative h-16 flex items-center ">
         <MaxWidthWrapper>
           <div className="box flex justify-between bg-white shadow-md rounded-xl  md:px-6">
-            <div className="ml-4 flex  lg:ml-0 ">
+            <div className="logo-box ml-4 flex  lg:ml-0 ">
               <Link href="/">
                 <Image
-                  src="/assets/images/logo.png"
-                  width={150}
-                  height={150}
+                  src="/assets/images/logo.svg"
                   alt="logo"
+                  width={100}
+                  height={100}
+                  
                 />
               </Link>
             </div>

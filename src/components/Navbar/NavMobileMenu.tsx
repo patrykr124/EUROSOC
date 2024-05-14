@@ -29,7 +29,7 @@ function NavMobileMenu() {
       />
       <MaxWidthWrapper>
         <div
-          className={`box-menu fixed rounded-xl top-[8%]  w-[50%] bg-white ${
+          className={`box-menu fixed rounded-xl top-[9%]  w-[50%] bg-white ${
             isOpen ? "right-3" : "translate-x-full "
           } transition ease-in-out delay-150`}
         >

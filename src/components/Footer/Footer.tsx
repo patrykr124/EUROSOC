@@ -6,7 +6,7 @@ import XIcon from "@mui/icons-material/X";
 
 function Footer() {
   return (
-    <div className="border-t border-gray-200 md:mt-40 mt-20 py-10">
+    <div id="contact" className="border-t border-gray-200 md:mt-40 mt-20 py-10">
       <MaxWidthWrapper>
         <div className="box-grid grid md:grid-cols-3 grid-cols-2">
           <div className="left">
@@ -22,12 +22,9 @@ function Footer() {
               <p>
                 UL. GRZYBOWSKA 2/29<br></br> 00-131 WARSZAWA
               </p>
-              <p>tel. 74 852 00 00</p>
-              <p>
-                <Link href="mailto:patrykr124@gmail.com">
-                  sales@cybers.zone
-                </Link>
-              </p>
+              <Link href="tel:+48748520000">tel. 74 852 00 00</Link>
+
+              <Link href="mailto:sales@cybers.zone">sales@cybers.zone</Link>
             </div>
           </div>
           <div className="middle flex justify-center">
@@ -35,8 +32,6 @@ function Footer() {
               <div className="right md:hidden flex flex-col justify-end  ">
                 <div className="nav-box flex flex-col">
                   <Link href="/politykaprywatnosci">Polityka prywatności</Link>
-                  <Link href="/regulamin">Regulamin</Link>
-                  <Link href="/kontakt">Kontakt</Link>
                 </div>
               </div>
               <div className="icon flex justify-center gap-5">
@@ -63,8 +58,6 @@ function Footer() {
           <div className="right md:flex hidden md:justify-center ">
             <div className="nav-box flex flex-col justify-end ">
               <Link href="/politykaprywatnosci">Polityka prywatności</Link>
-              <Link href="/regulamin">Regulamin</Link>
-              <Link href="/kontakt">Kontakt</Link>
             </div>
           </div>
         </div>
