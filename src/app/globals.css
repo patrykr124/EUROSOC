@@ -60,9 +60,7 @@ h4 {
   font-weight: 300;
 }
 
-/* body{
-  color: hsl(0, 0%, 87%);
-} */
+
 
 @layer base {
   :root {
@@ -87,6 +85,7 @@ h4 {
     --ring: 20 14.3% 4.1%;
     --radius: 0.5rem;
     --tertiary: 345, 100%, 40%;
+    --secondarySilver: 0, 0%, 75%;
   }
 
   .dark {
@@ -110,6 +109,7 @@ h4 {
     --input: 12 6.5% 15.1%;
     --ring: 35.5 91.7% 32.9%;
     --tertiary: 345, 100%, 40%;
+    --secondarySilver: 0, 0%, 75%;
   }
 }
 

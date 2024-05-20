@@ -34,7 +34,7 @@ export const home1SliderProps = {
       translate: ["100%", 0, 0],
     },
   },
-  speed: 1500,
+  speed: 1800,
   mousewheel: true,
   watchSlidesProgress: true,
   pagination: {

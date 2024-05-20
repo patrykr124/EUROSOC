@@ -12,7 +12,10 @@ import CertificatesText from "./CertificatesText";
 
 function Certificates() {
   return (
-    <div id="onas" className="pb-24 bg-[#dddddd]">
+    <div
+      id="onas"
+      className="pb-24 bg-gradient-to-b from-secondary from-70% to-white  "
+    >
       <MaxWidthWrapper>
         <div className="title flex flex-col justify-center items-center md:py-24 py-12">
           <h2 className="">

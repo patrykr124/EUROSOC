@@ -4,12 +4,14 @@ import "./Functionality.css";
 interface FunctionalityGridTopProps {
   title: string;
   desc: string;
+  desc2: string;
   className?: string;
   icon: ReactNode;
 }
 function FunctionalityGridTop({
   title,
   desc,
+  desc2,
   className,
   icon,
 }: FunctionalityGridTopProps) {
@@ -24,6 +26,9 @@ function FunctionalityGridTop({
         <h3 className="font-bold  ">{title}</h3>
         <p className="font-light text-base whitespace-break-spaces flex text-center md:text-start">
           {desc}
+        </p>
+        <p className="font-light text-base whitespace-break-spaces flex text-center md:text-start">
+          {desc2}
         </p>
       </div>
     </div>

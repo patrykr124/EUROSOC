@@ -7,7 +7,7 @@ import NavMobileMenu from "./NavMobileMenu";
 
 function NavBar() {
   return (
-    <div className=" fixed z-50 top-1 inset-x-0 h-16 ">
+    <div className=" fixed z-50 top-2 inset-x-0 h-16 ">
       <header className="relative h-16 flex items-center ">
         <MaxWidthWrapper>
           <div className="box flex justify-between bg-white shadow-md rounded-xl  md:px-6">

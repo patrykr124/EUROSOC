@@ -62,7 +62,7 @@ const PopupCheck: React.FC<PopupCheckProps> = () => {
     <div
       id="cennik"
       style={{
-        background: "url('/assets/images/backgroundbottom.png')",
+        background: "url('/assets/images/backgroundYellow.png')",
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -85,7 +85,7 @@ const PopupCheck: React.FC<PopupCheckProps> = () => {
             <ButtonLayout toggle={toggle} handleToggle={handleToggle} />
           </div>
           <div className="box flex flex-col gap-6 lg:flex-row">
-            <div className="left order-2 md:order-2 lg:order-1 bg-secondary rounded-xl md:p-6 p-2 flex flex-col ">
+            <div className="left order-2 md:order-2 lg:order-1 bg-gradient-to-br from-secondary from-30% to-gray-200 rounded-xl md:p-6 p-2 flex flex-col ">
               <div className="left-box-content flex flex-col gap-2 ">
                 <BasicLayout
                   handleBasicQuantityChange={handleBasicQuantityChange}
@@ -124,14 +124,15 @@ const PopupCheck: React.FC<PopupCheckProps> = () => {
                         href="/politykaprywatnosci"
                         className="text-primary hover:text-black "
                       >
-                          {' '}więcej...
+                        {" "}
+                        więcej...
                       </Link>
                     </span>
                   </label>
                 </div>
               </div>
             </div>
-            <div className="right order-1 md:order-1 lg:order-2 flex flex-col w-full bg-secondary rounded-xl md:p-6 p-2">
+            <div className="right order-1 md:order-1 lg:order-2 flex flex-col w-full bg-gradient-to-br from-secondary from-20% to-gray-100 shadow-md  rounded-xl md:p-6 p-2">
               <VariableLayout
                 quantities={quantities}
                 handleQuantityChange={handleQuantityChange}

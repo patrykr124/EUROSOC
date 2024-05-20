@@ -39,44 +39,52 @@ function Functionality() {
           <FunctionalityGridTop
             icon={<ScanEye />}
             title="Monitoring"
-            desc="w czasie rzeczywistym z dokładnością do 1s"
+            desc="w czasie rzeczywistym"
+            desc2="z dokładnością do 1s"
           />
           <FunctionalityGridTop
             icon={<ShieldCheck />}
             title="Obniżenie"
-            desc="ryzyk związanych z bezpieczeństwem"
+            desc="ryzyk związanych"
+            desc2="z bezpieczeństwem"
           />
           <FunctionalityGridTop
             icon={<HandCoins />}
             title="Obniżenie"
             desc="ryzyk związanych z karami finansowymi"
+            desc2=""
           />
           <FunctionalityGridTop
             icon={<ClipboardPlus />}
             title="Raporty"
             desc="o użytkownikach (bezpieczeństwo, aktywność)"
+            desc2=""
             className="border-r-0"
           />
           <FunctionalityGridTop
             icon={<BringToFront />}
             title="Zaawansowana"
             desc="korelacja zdarzeń z różnych źródeł"
+            desc2=""
           />
           <FunctionalityGridTop
             icon={<GlobeLock />}
             title="Ochrona"
             desc="przed zjawiskiem Shadow IT (nieautoryzowane oprogramowanie)"
+            desc2=""
           />
           <FunctionalityGridTop
             icon={<RefreshCcw />}
             title="Codzienne"
-            desc="skanowanie całej infrastruktury w poszukiwaniu nowych podatności"
+            desc="skanowanie całej infrastruktury"
+            desc2="w poszukiwaniu nowych podatności"
           />
           <FunctionalityGridTop
             icon={<Brain />}
             title="Automatyzacja"
             desc="dystrybucji i aktualizacji oprogramowania"
             className="border-r-0"
+            desc2=""
           />
           <FunctionalityGridBottom
             icon={<TabletSmartphone />}

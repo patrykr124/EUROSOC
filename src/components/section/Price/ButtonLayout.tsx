@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 
+
+
 function ButtonLayout({ toggle, handleToggle }) {
   return (
-    <div className=" bg-secondary justify-center flex gap-2 flex-col lg:flex-row md:flex-row md:gap-6 lg:gap-6 p-2 rounded-xl">
+    <div className=" bg-gradient-to-r from-secondary to-60% to-gray-200 justify-center flex gap-2 flex-col lg:flex-row md:flex-row md:gap-6 lg:gap-6 p-2 rounded-xl">
       <Button
         className={
           toggle === 1

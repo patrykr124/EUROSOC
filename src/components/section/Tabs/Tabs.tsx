@@ -33,7 +33,7 @@ function Tabs() {
   return (
     <div
       id="jak"
-      className="tabs pb-24 border-t-2 z-10 relative  "
+      className="tabs pb-24 border-t-2 z-10 bg-gradient-to-b from-secondary from-80% to-white  "
       // style={{
       //   background: "url('/assets/images/backgroundtop.png')",
       //   backgroundPosition: "bottom",
@@ -41,13 +41,6 @@ function Tabs() {
       //   backgroundRepeat: "no-repeat",
       // }}
     >
-      <div
-        className="gradient absolute h-full w-full -z-10 overflow-hidden "
-        style={{
-          background:
-            "linear-gradient(0deg, rgba(255,255,255,0.3113446062018558) 0%, rgba(0,0,0,0.12086841572566531) 100%)",
-        }}
-      ></div>
       <MaxWidthWrapper className="overflow-hidden">
         <div className="title flex flex-col items-center justify-center py-12 md:py-24 ">
           <h2 className="md:block items-center justify-center text-center">
@@ -58,7 +51,7 @@ function Tabs() {
             Odkryj zaawansowane technologie stojące za naszą ochroną
           </p>
         </div>
-        <div className="box min-h-[700px]  rounded-2xl  flex xl:flex-row flex-col  p-4 gap-12 justify-center items-center">
+        <div className="box   rounded-2xl  flex xl:flex-row flex-col  p-4 gap-12 justify-center items-center">
           <div className="left flex flex-col gap-4 mx-auto">
             <div className="searchBar bg-white border-2 h-9 items-center rounded-xl flex flex-row ">
               <SearchIcon size={18} className="m-1.5" />
@@ -258,7 +251,7 @@ function Tabs() {
             </div>
           </div>
 
-          <div className="right h-[700px] flex flex-1 ">
+          <div className="right min-h-[700px] flex flex-1 ">
             <ContentTabs
               className={activeTab === 1 ? "active-content " : "content"}
               title="Cybers Out"

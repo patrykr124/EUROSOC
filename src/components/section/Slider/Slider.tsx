@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "./slider.css";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button } from "@/components/ui/button";
+import { GlobeDemo } from "@/components/Globe";
 
 function Slider() {
   return (
@@ -26,8 +27,8 @@ function Slider() {
             />
             {/* slide titles */}
             <MaxWidthWrapper>
-              <div className="slide-titles">
-                <div className="row">
+              <div className="slide-titles flex">
+                <div className="row flex-1">
                   <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     {/* title */}
                     <div className="titles dark">
@@ -65,6 +66,9 @@ function Slider() {
                       </Button>
                     </div>
                   </div>
+                </div>
+                <div className="globe lg:flex-1  lg:flex hidden">
+                  <GlobeDemo />
                 </div>
               </div>
             </MaxWidthWrapper>

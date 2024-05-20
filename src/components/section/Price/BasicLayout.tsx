@@ -1,7 +1,13 @@
 import React from "react";
 import { basicData } from "./Data";
-
-function BasicLayout({ handleBasicQuantityChange, basicQuantities }) {
+interface BasicLayoutProps {
+  handleBasicQuantityChange: (title: string, value: number) => void;
+  basicQuantities: { [key: string]: number };
+}
+function BasicLayout({
+  handleBasicQuantityChange,
+  basicQuantities,
+}: BasicLayoutProps) {
   return (
     <div className="flex flex-col gap-4">
       <div className="title">
